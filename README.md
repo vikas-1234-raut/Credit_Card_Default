@@ -12,18 +12,9 @@ False Negative (FN): Cases in which the model predicted 'no' (non-default) but t
 Accuracy Calculation
 The accuracy of the model is calculated using the formula:
 
-Accuracy
-=
-𝑇
-𝑃
-+
-𝑇
-𝑁
-Total Samples
-Accuracy= 
-Total Samples
-TP+TN
-​
+Accuracy= ___Tp+Tn_________
+​           Total sample
+
  
 
 Where:
