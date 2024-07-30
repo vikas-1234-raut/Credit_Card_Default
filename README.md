@@ -1,9 +1,33 @@
-We used the [**Credit Card Default payment in Taiwan**]
-(https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients) to **predict whether the credit card holders are defaulters or Non-defaulters**.
+Model Evaluation: Confusion Matrix
+Overview
+In our project, we aim to predict whether credit card holders will default on their payments. We use the Credit Card Default Payment Dataset from the UCI Machine Learning Repository. After training a logistic regression model on the training data, we evaluate its performance using a confusion matrix on the test data.
 
-For Model Evaluation we are referreing Confusion Matrix
-After we train a logistic regression model on some training data, we will evaluate the performance of the model on some test data. For this, we use the Confusion Matrix
+Confusion Matrix
+The confusion matrix is a table used to describe the performance of a classification model. It shows the counts of actual versus predicted classifications. Here’s a breakdown of the terms used in the confusion matrix:
 
-the accuracy of the model : - ( TP + TN ) / Total
+True Positive (TP): Cases in which the model predicted 'yes' (default) and the actual value was also 'yes' (default).
+True Negative (TN): Cases in which the model predicted 'no' (non-default) and the actual value was also 'no' (non-default).
+False Positive (FP): Cases in which the model predicted 'yes' (default) but the actual value was 'no' (non-default).
+False Negative (FN): Cases in which the model predicted 'no' (non-default) but the actual value was 'yes' (default).
+Accuracy Calculation
+The accuracy of the model is calculated using the formula:
 
-Here, TP stands for True Positive which are the cases in which we predicted yes and the actual value was true. TN stands for True Negative which are the cases in which we predicted no and the actual value was false.FP stands for False Positive which are the cases which we predicted yes and the actual value was False.FN stands for False Negative which are the cases which we predicted No and the actual value was true.
+Accuracy
+=
+𝑇
+𝑃
++
+𝑇
+𝑁
+Total Samples
+Accuracy= 
+Total Samples
+TP+TN
+​
+ 
+
+Where:
+
+TP is True Positive
+TN is True Negative
+Total Samples is the sum of all instances in the dataset.
